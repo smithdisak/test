@@ -4,10 +4,13 @@ from airflow import DAG
 # from airflow.operators.dummy.DummyOperator import DummyOperator
 from airflow.operators.dummy import DummyOperator
 
-from airflow.operators.stage_redshift import StageToRedshiftOperator
-from airflow.operators.load_fact import LoadFactOperator
-from airflow.operators.load_dimension import LoadDimensionOperator
-from airflow.operators.data_quality import DataQualityOperator
+from airflow.operators import (StageToRedshiftOperator, LoadFactOperator,
+                                LoadDimensionOperator, DataQualityOperator)
+
+# from airflow.operators.stage_redshift import StageToRedshiftOperator
+# from airflow.operators.load_fact import LoadFactOperator
+# from airflow.operators.load_dimension import LoadDimensionOperator
+# from airflow.operators.data_quality import DataQualityOperator
 
 from helpers import SqlQueries
 from create_tables import *
