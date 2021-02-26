@@ -6,7 +6,7 @@ from airflow.operators.dummy import DummyOperator
 # from airflow.operators.stage_redshift import StageToRedshiftOperator 
 # 
 # from airflow.operators import ( StageToRedshiftOperator,LoadFactOperator,
-                                 LoadDimensionOperator, DataQualityOperator)
+#                                LoadDimensionOperator, DataQualityOperator)
 
 from operators.stage_redshift import StageToRedshiftOperator
 from operators.load_fact import LoadFactOperator
