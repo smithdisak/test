@@ -68,3 +68,8 @@ class StageToRedshiftOperator(BaseOperator):
             self.format
         )
         redshift.run(formatted_sql)
+
+
+
+
+

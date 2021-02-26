@@ -1,3 +1,4 @@
+"""
 from __future__ import division, absolute_import, print_function
 
 from airflow.plugins_manager import AirflowPlugin
@@ -17,3 +18,4 @@ class UdacityPlugin(AirflowPlugin):
     helpers = [
         helpers.SqlQueries
     ]
+"""
