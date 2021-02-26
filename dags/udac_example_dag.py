@@ -8,7 +8,7 @@ from airflow.operators.dummy import DummyOperator
 # from airflow.operators import ( StageToRedshiftOperator,LoadFactOperator,
 #                                LoadDimensionOperator, DataQualityOperator)
 
-from stage_redshift import StageToRedshiftOperator
+from git-plugin.stage_redshift import StageToRedshiftOperator
 from load_fact import LoadFactOperator
 from operators.load_dimension import LoadDimensionOperator
 from operators.data_quality import DataQualityOperator
