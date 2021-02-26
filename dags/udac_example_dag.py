@@ -3,9 +3,9 @@ import os
 from airflow import DAG
 # from airflow.operators.dummy.DummyOperator import DummyOperator
 from airflow.operators.dummy import DummyOperator
-
-from airflow.operators import (StageToRedshiftOperator, LoadFactOperator,
-                                LoadDimensionOperator, DataQualityOperator)
+from operators.stage_redshift import StageToRedshiftOperator
+# from airflow.operators import (StageToRedshiftOperator, LoadFactOperator,
+#                                 LoadDimensionOperator, DataQualityOperator)
 
 # from airflow.operators.stage_redshift import StageToRedshiftOperator
 # from airflow.operators.load_fact import LoadFactOperator
