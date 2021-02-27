@@ -24,6 +24,8 @@ Documentation that goes along with the Airflow tutorial located
 """
 # [START tutorial]
 from datetime import timedelta
+# test load operator 
+from hello_operator import HelloOperator
 
 # [START import_module]
 # The DAG object; we'll need this to instantiate a DAG
