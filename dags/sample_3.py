@@ -25,6 +25,8 @@ Documentation that goes along with the Airflow tutorial located
 # [START import_module]
 from datetime import timedelta
 
+from hello_operator import HelloOperator
+
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
 
@@ -74,6 +76,7 @@ dag = DAG(
 
 # t1, t2 and t3 are examples of tasks created by instantiating operators
 # [START basic_task]
+t0 = HelloOperator(task_id='sample-task', name='foo_bar', dag=dag)
 t1 = BashOperator(
     task_id='print_date',
     bash_command='date',
@@ -119,5 +122,5 @@ t3 = BashOperator(
 )
 # [END jinja_template]
 
-t1 >> [t2, t3]
+t0 >> t1 >> [t2, t3]
 # [END tutorial]
