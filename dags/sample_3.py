@@ -76,7 +76,7 @@ dag = DAG(
 
 # t1, t2 and t3 are examples of tasks created by instantiating operators
 # [START basic_task]
-t0 = HelloOperator(task_id='sample-task', name='foo_bar', dag=dag)
+t0 = HelloOperator(task_id='Hello-sample-task', name='foo_bar', dag=dag)
 t1 = BashOperator(
     task_id='print_date',
     bash_command='date',
